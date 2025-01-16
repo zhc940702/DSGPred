@@ -11,13 +11,13 @@
 
 If you use anaconda or miniconda, you can install them using conda
 
-But before install torch-geometric, you need to first download and install in order the corresponding versions of torch_scatter, torch_sparse, torch_cluster and torch_spline_conv from https://data.pyg.org/whl/torch-2.2.1%2Bcu118.html, and then run 
+But before installing torch-geometric, you need to first download and install in order the corresponding versions of torch_scatter, torch_sparse, torch_cluster and torch_spline_conv from https://data.pyg.org/whl/torch-2.2.1%2Bcu118.html, and then run 
 
 ```
 conda install torch_geometric
 ```
 
-ATTENTION：Because there may be version incompatibility issues between fitlog and numpy packages, the following error occurs: 
+ATTENTION： Because there may be version incompatibility issues between fitlog and numpy packages, the following error occurs: 
 
 ```
 AttributeError: module 'numpy' has no attribute 'str'.
@@ -59,9 +59,9 @@ if isinstance(value, (np.str_, str)) or value is None:
 
 #### 	4. IC50
 
-​		ic_170drug_580cell.pkl:IC50 data for 170 drugs and 580 cell lines, as a feature of drugs and cell lines
+​		ic_170drug_580cell.pkl: IC50 data for 170 drugs and 580 cell lines, as a feature of drugs and cell lines
 
-​		samples_82833.pkl:benchmark dataset, association data between drugs and cell lines.
+​		samples_82833.pkl: benchmark dataset, association data between drugs and cell lines.
 
 #### 	5. drug_graph.npy
 
@@ -90,7 +90,7 @@ This function contains the necessary processing subroutines, such as model train
 
 ## 7. main.py
 
-The main function of the model, which contains some hyperparameter settings. Running this function can train and test the model
+The main function of the model contains some hyperparameter settings. Running this function can train and test the model
 
 
 
@@ -100,11 +100,11 @@ mode: Set the mode to train or test, then you can train the model or test the mo
 
 epochs: Define the maximum number of epochs.
 
-batch_size: Define the number of batch size for training.
+batch_size: Define the number of batch sizes for training.
 
 data_bath: All input data should be placed in the folder of this path. (The data folder we uploaded contains all the required data.)
 
-weight_path: Define the path to save the model.
+weight_path: Define the path to save the model (Need to create a folder called "weight").
 
 
 
